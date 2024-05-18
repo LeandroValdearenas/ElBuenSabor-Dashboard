@@ -16,5 +16,6 @@ export default class ArticuloInsumo extends Base {
     esParaElaborar:boolean = false;
     type:string = "insumo";
 
+    static nombre:string = "Artículo Insumo";
     static labels:string[] = ["Id", "Denominación", "Categoría", "Stock actual", "Stock mínimo", "Stock máximo", "Precio de compra", "Precio de venta", "Unidad de Medida", "Imágenes", "Es Para Elaborar"];
 }

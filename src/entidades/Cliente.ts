@@ -13,5 +13,6 @@ export default class Cliente extends Base {
     domicilios:Domicilio[] = [];
     pedidos:[] = [];
     
+    static nombre:string = "Cliente";
     static labels:string[] = ["Id", "Rol", "Nombre", "Apellido", "Teléfono", "Email", "Fecha de nacimiento", "Imágen", "Domicilios", "Pedidos"];
 }

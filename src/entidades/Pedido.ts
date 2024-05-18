@@ -17,6 +17,7 @@ export default class Pedido extends Base {
     empleado:Empleado = new Empleado();
     //private Set<DetallePedido> detallePedidos = new HashSet<>();
 
+    static nombre:string = "Pedido";
     static labels:string[] = [
         "Id", 
         "Hora estimada de finalización", 

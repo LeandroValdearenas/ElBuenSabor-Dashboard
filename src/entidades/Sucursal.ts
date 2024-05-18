@@ -12,5 +12,6 @@ export default class Sucursal extends Base {
     promociones:Promocion[] = [];
     casaMatriz:boolean = false;
 
+    static nombre:string = "Sucursal";
     static labels:string[] = ['Id', 'Nombre', 'Horario apertura', 'Horario cierre', 'Domicilio', 'Empresa', 'Promociones', 'Es casa matriz']
 }

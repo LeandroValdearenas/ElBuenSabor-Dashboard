@@ -118,7 +118,11 @@ function CategoriasForm() {
     }
     
     const eliminarCategoria = async (categoriaId:number) => {
-        await categoriaService.delete(categoriaId);
+        try {
+            await categoriaService.delete(categoriaId);
+          } catch {
+            alert(`Hubo un conflicto. Asegúrese de que la categoría no esté siendo utilizado en otros datos.`);
+          }
 
         await getCategoriasRest();
     }

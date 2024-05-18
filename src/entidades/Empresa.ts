@@ -9,5 +9,6 @@ export default class Empresa extends Base {
     imagen:Imagen = new Imagen();
     sucursales:Sucursal[] = [];
 
+    static nombre:string = "Empresa";
     static labels:string[] = ["Id", "Nombre", "Razón social", "Cuil", "Imágen"]
 }

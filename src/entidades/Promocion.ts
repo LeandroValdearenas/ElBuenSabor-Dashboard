@@ -16,6 +16,7 @@ export default class Promocion extends Base {
     sucursales:Sucursal[] = [];
     promocionDetalles:PromocionDetalle[] = [];
     
+    static nombre:string = "Promoción";
     static labels:string[] = [
         "Id", 
         "Denominación", 

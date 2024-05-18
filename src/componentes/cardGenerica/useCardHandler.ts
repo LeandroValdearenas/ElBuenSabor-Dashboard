@@ -36,7 +36,7 @@ function useCardHandler<T extends Base>({
     try {
       await apiServicio.delete(id);
     } catch {
-      alert(`Hubo un conflicto. Asegúrese de que el ${(entidad as any).constructor.name} no esté siendo utilizado en otros datos.`);
+      alert(`Hubo un conflicto. Asegúrese de que el ${(entidad as any).constructor.nombre} no esté siendo utilizado en otros datos.`);
     }
     getDatosRest();
   }, [apiServicio, (entidad as any).constructor.name, getDatosRest]);

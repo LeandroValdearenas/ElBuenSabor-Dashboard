@@ -53,7 +53,7 @@ function GrillaGenerica<T extends Base>({ entidadPrevia, entidadBase, apiServici
 
   return (
     <>
-      <ModalGenerico titulo={entidadBase.constructor.name} tituloModal={entidadBase.constructor.name} ref={modalRef}>
+      <ModalGenerico titulo={(entidadBase as any).constructor.name} tituloModal={(entidadBase as any).constructor.nombre} ref={modalRef}>
         <FormularioGenerico data={entidad} onSubmit={save} listaSelects={listaSelects} />
       </ModalGenerico>
 
