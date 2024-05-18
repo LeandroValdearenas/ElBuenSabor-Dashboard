@@ -29,7 +29,7 @@ const ModalGenerico = forwardRef(({ tituloModal, titulo, children }: ModalArgs, 
                     <div className="modal-dialog">
                         <div className="modal-content">
                             <div className="modal-header">
-                                <h5 className="modal-title">{children.props.data.id ? 'Modificar' : 'Crear'} {tituloModal}</h5>
+                                <h5 className="modal-title">{children.props.data && (children.props.data.id ? 'Modificar' : 'Crear')} {tituloModal}</h5>
                                 <button type="button" id={"btn-close-" + titulo} className="btn-close" aria-label="Close" onClick={closeModal}></button>
                             </div>
 
