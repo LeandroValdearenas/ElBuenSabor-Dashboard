@@ -24,7 +24,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           <NavBar/>
           <div className='content'>
           <Routes>
-            <Route index element={<Insumos />} />
+            <Route index element={<Empresas />} />
             <Route path="/insumos" element={<Insumos />} />
             <Route path="/manufacturados" element={<Manufacturados />} />
             <Route path="/empleados" element={<Empleados />} />
@@ -33,7 +33,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
             <Route path="/promociones" element={<Promociones />} />
             <Route path="/empresas" element={<Empresas />} />
             <Route path="/sucursales" element={<Sucursales />} />
-            <Route path="*" element={<Insumos />} />
+            <Route path="*" element={<Empresas />} />
           </Routes>
           </div>
     </div>
