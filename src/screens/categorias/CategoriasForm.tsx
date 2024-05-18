@@ -121,7 +121,7 @@ function CategoriasForm() {
         try {
             await categoriaService.delete(categoriaId);
           } catch {
-            alert(`Hubo un conflicto. Asegúrese de que la categoría no esté siendo utilizado en otros datos.`);
+            alert(`Hubo un conflicto. Asegúrese de que la categoría no esté siendo utilizada en otros datos.`);
           }
 
         await getCategoriasRest();
