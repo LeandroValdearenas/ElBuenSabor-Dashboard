@@ -1,4 +1,4 @@
-import React, { forwardRef, useImperativeHandle, useRef, useState } from "react";
+import React, { forwardRef, useImperativeHandle, useState } from "react";
 
 type ModalArgs = {
     tituloModal: string,
@@ -7,7 +7,6 @@ type ModalArgs = {
 }
 
 const ModalGenerico = forwardRef(({ tituloModal, titulo, children }: ModalArgs, ref: React.Ref<any>) => {
-    const modalRef = useRef<any>(null);
     const [showModal, setShowModal] = useState(false);
 
     const openModal = () => {

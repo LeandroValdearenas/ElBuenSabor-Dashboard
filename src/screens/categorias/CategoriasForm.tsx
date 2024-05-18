@@ -123,11 +123,6 @@ function CategoriasForm() {
         await getCategoriasRest();
     }
 
-    const closeForm = async () => {
-        let modalClose:HTMLElement | null = document.getElementById("btn-close-categorias");
-        modalClose?.click();
-    }
-
     useEffect(() => {
         getCategoriasRest();
     }, []);
